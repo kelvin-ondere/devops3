@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>survey form</title>
+
+     <!--css file link-->
+     <link rel="stylesheet" href="devops3/form.css"/>
+     <!--end of css file link-->
+ </head>   
+ <body style="background-color: #7c4700;">
+     <div class="container"
+          <header class="header">
+            <h1 style="text-align:center;" id="title">
+                Survey from AJIRA
+            </h1>
+            <p style="text-align:center;" id="description">
+                Thank you for taking your time to help us improve this platform
+            </p>
+          </header>
+          <form action="" id="survey-form"> 
+            <!--Text section-->
+            <div style="text-align:center;" class="form-group">
+                <label for="name">Name</label>
+                <input type="email"name="email" id="email"class="form control"placeholder="Enter your email"required>
+            </div>
+            <!-- end of text section -->
+            
+            <!--Type email section-->
+            <div style="text-align:center;" class="form-group">
+                <label for="email">Email</label>
+                <input type="text"name="name" id="name"class="form control"placeholder="Enter your email"required>
+            </div>
+            <!--end of type email section-->
+
+            <!-- Type number section -->
+            <div style="text-align:center;" class="form-group">
+                <label for="phone">phone Number</label>
+                <input tpe="number"name="phone" id="phone"class="form control"placeholder="Enter your phone number"required>
+            </div>
+            <!-- end of number section-->
+
+            <!-- Address section -->
+            <div style="text-align:center;" class="form-group">
+                <label for="address">Address<span class="clue">(optional)</span></label>
+                <input type="address"name="address" id="address"class="form control"placeholder="Enter your address"required>
+            </div>
+
+            <!-- end of address section -->
+
+            <!--select selection-->
+            <div style="text-align:center;" class="form-group">
+                <p id="quest">which option best describes your current role ?</p>
+                <select name="role"id="dropdown" class="formcontrol" required>
+                    <option value=""disabled selected>select current role</option>
+                    <option value="student">student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="employee">employee</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <!-- end of select selection -->
+
+            <!-- radio button selection -->
+            <div style="text-align:center;" class="form-group">
+                <p id="quest">How you came to know about AJIRA</p>
+                <label for="">
+                    <input type="radio" name="source" value="friends" class="inputradio" checked>Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv ads" class="inputradio" checked>Tv ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social media" class="inputradio" checked>Social media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="news papers" class="inputradio" checked>News papers
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other" class="inputradio" checked>Other
+                </label> 
+            </div>
+            <!-- end of radio button selection -->
+
+            <!-- checkbox selection -->
+            <div style="text-align:center;" class="formn-group">
+                <p id="quest"> what would you like to see improved</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Front-end-dev">Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="App-dev">App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft engineering">Software engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other">other
+                </label>
+            </div>
+            <!-- end of checkbox selection -->
+
+            <!-- Textarea section -->
+            <div  style="text-align:center;"class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <!-- end of textarea section -->
+            
+            <!-- submit button -->
+            <div style="text-align:center;" class="from group">
+                <button type="submit" id="submit" class="btn">submit</button>
+            </div>
+
+          </form>
+ </body>
+ </html>
